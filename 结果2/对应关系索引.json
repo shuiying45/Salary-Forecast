@@ -1,0 +1,248 @@
+[
+  {
+    "chart": "01_薪资分布直方图.png",
+    "script": "数据可视化.py",
+    "folder": "C:\\Users\\shenjie\\Desktop\\学校\\商务数据管理\\对应分类\\01_薪资分布直方图",
+    "line": 50
+  },
+  {
+    "chart": "02_薪资箱线图.png",
+    "script": "数据可视化.py",
+    "folder": "C:\\Users\\shenjie\\Desktop\\学校\\商务数据管理\\对应分类\\02_薪资箱线图",
+    "line": 61
+  },
+  {
+    "chart": "03_不同岗位平均薪资对比.png",
+    "script": "数据可视化.py",
+    "folder": "C:\\Users\\shenjie\\Desktop\\学校\\商务数据管理\\对应分类\\03_不同岗位平均薪资对比",
+    "line": 76
+  },
+  {
+    "chart": "04_不同学历平均薪资对比.png",
+    "script": "数据可视化.py",
+    "folder": "C:\\Users\\shenjie\\Desktop\\学校\\商务数据管理\\对应分类\\04_不同学历平均薪资对比",
+    "line": 90
+  },
+  {
+    "chart": "05_学历水平与薪资箱线图.png",
+    "script": "数据可视化.py",
+    "folder": "C:\\Users\\shenjie\\Desktop\\学校\\商务数据管理\\对应分类\\05_学历水平与薪资箱线图",
+    "line": 102
+  },
+  {
+    "chart": "06_工作经验年限与薪资散点图.png",
+    "script": "数据可视化.py",
+    "folder": "C:\\Users\\shenjie\\Desktop\\学校\\商务数据管理\\对应分类\\06_工作经验年限与薪资散点图",
+    "line": 114
+  },
+  {
+    "chart": "07_工作经验年限与薪资趋势图.png",
+    "script": "数据可视化.py",
+    "folder": "C:\\Users\\shenjie\\Desktop\\学校\\商务数据管理\\对应分类\\07_工作经验年限与薪资趋势图",
+    "line": 126
+  },
+  {
+    "chart": "08_技能数量与薪资散点图.png",
+    "script": "数据可视化.py",
+    "folder": "C:\\Users\\shenjie\\Desktop\\学校\\商务数据管理\\对应分类\\08_技能数量与薪资散点图",
+    "line": 138
+  },
+  {
+    "chart": "09_技能数量与薪资趋势图.png",
+    "script": "数据可视化.py",
+    "folder": "C:\\Users\\shenjie\\Desktop\\学校\\商务数据管理\\对应分类\\09_技能数量与薪资趋势图",
+    "line": 150
+  },
+  {
+    "chart": "10_不同公司规模平均薪资对比.png",
+    "script": "数据可视化.py",
+    "folder": "C:\\Users\\shenjie\\Desktop\\学校\\商务数据管理\\对应分类\\10_不同公司规模平均薪资对比",
+    "line": 165
+  },
+  {
+    "chart": "11_不同工作地区平均薪资对比.png",
+    "script": "数据可视化.py",
+    "folder": "C:\\Users\\shenjie\\Desktop\\学校\\商务数据管理\\对应分类\\11_不同工作地区平均薪资对比",
+    "line": 180
+  },
+  {
+    "chart": "12_不同行业平均薪资对比.png",
+    "script": "数据可视化.py",
+    "folder": "C:\\Users\\shenjie\\Desktop\\学校\\商务数据管理\\对应分类\\12_不同行业平均薪资对比",
+    "line": 195
+  },
+  {
+    "chart": "13_远程办公方式与平均薪资.png",
+    "script": "数据可视化.py",
+    "folder": "C:\\Users\\shenjie\\Desktop\\学校\\商务数据管理\\对应分类\\13_远程办公方式与平均薪资",
+    "line": 209
+  },
+  {
+    "chart": "14_薪资区间占比饼图.png",
+    "script": "数据可视化.py",
+    "folder": "C:\\Users\\shenjie\\Desktop\\学校\\商务数据管理\\对应分类\\14_薪资区间占比饼图",
+    "line": 226
+  },
+  {
+    "chart": "15_相关性热力图.png",
+    "script": "数据可视化.py",
+    "folder": "C:\\Users\\shenjie\\Desktop\\学校\\商务数据管理\\对应分类\\15_相关性热力图",
+    "line": 239
+  },
+  {
+    "chart": "16_不同经验等级平均薪资对比.png",
+    "script": "数据可视化.py",
+    "folder": "C:\\Users\\shenjie\\Desktop\\学校\\商务数据管理\\对应分类\\16_不同经验等级平均薪资对比",
+    "line": 253
+  },
+  {
+    "chart": "17_不同技能等级平均薪资对比.png",
+    "script": "数据可视化.py",
+    "folder": "C:\\Users\\shenjie\\Desktop\\学校\\商务数据管理\\对应分类\\17_不同技能等级平均薪资对比",
+    "line": 267
+  },
+  {
+    "chart": "18_回归模型MAE对比.png",
+    "script": "回归模型.py",
+    "folder": "C:\\Users\\shenjie\\Desktop\\学校\\商务数据管理\\对应分类\\18_回归模型MAE对比",
+    "line": 309
+  },
+  {
+    "chart": "19_回归模型RMSE对比.png",
+    "script": "回归模型.py",
+    "folder": "C:\\Users\\shenjie\\Desktop\\学校\\商务数据管理\\对应分类\\19_回归模型RMSE对比",
+    "line": 322
+  },
+  {
+    "chart": "20_回归模型R2对比.png",
+    "script": "回归模型.py",
+    "folder": "C:\\Users\\shenjie\\Desktop\\学校\\商务数据管理\\对应分类\\20_回归模型R2对比",
+    "line": 335
+  },
+  {
+    "chart": "21_回归模型评价指标热力图.png",
+    "script": "回归模型.py",
+    "folder": "C:\\Users\\shenjie\\Desktop\\学校\\商务数据管理\\对应分类\\21_回归模型评价指标热力图",
+    "line": 351
+  },
+  {
+    "chart": "22_最优回归模型真实值预测值对比.png",
+    "script": "回归模型.py",
+    "folder": "C:\\Users\\shenjie\\Desktop\\学校\\商务数据管理\\对应分类\\22_最优回归模型真实值预测值对比",
+    "line": 369
+  },
+  {
+    "chart": "23_最优回归模型残差散点图.png",
+    "script": "回归模型.py",
+    "folder": "C:\\Users\\shenjie\\Desktop\\学校\\商务数据管理\\对应分类\\23_最优回归模型残差散点图",
+    "line": 382
+  },
+  {
+    "chart": "24_最优回归模型残差分布图.png",
+    "script": "回归模型.py",
+    "folder": "C:\\Users\\shenjie\\Desktop\\学校\\商务数据管理\\对应分类\\24_最优回归模型残差分布图",
+    "line": 394
+  },
+  {
+    "chart": "25_最优回归模型绝对误差箱线图.png",
+    "script": "回归模型.py",
+    "folder": "C:\\Users\\shenjie\\Desktop\\学校\\商务数据管理\\对应分类\\25_最优回归模型绝对误差箱线图",
+    "line": 405
+  },
+  {
+    "chart": "26_最优回归模型前200样本预测对比.png",
+    "script": "回归模型.py",
+    "folder": "C:\\Users\\shenjie\\Desktop\\学校\\商务数据管理\\对应分类\\26_最优回归模型前200样本预测对比",
+    "line": 422
+  },
+  {
+    "chart": "27_回归模型特征重要性Top20.png",
+    "script": "回归模型.py",
+    "folder": "C:\\Users\\shenjie\\Desktop\\学校\\商务数据管理\\对应分类\\27_回归模型特征重要性Top20",
+    "line": 459
+  },
+  {
+    "chart": "28_分类模型Accuracy对比.png",
+    "script": "分类模型.py",
+    "folder": "C:\\Users\\shenjie\\Desktop\\学校\\商务数据管理\\对应分类\\28_分类模型Accuracy对比",
+    "line": 318
+  },
+  {
+    "chart": "29_分类模型Precision对比.png",
+    "script": "分类模型.py",
+    "folder": "C:\\Users\\shenjie\\Desktop\\学校\\商务数据管理\\对应分类\\29_分类模型Precision对比",
+    "line": 331
+  },
+  {
+    "chart": "30_分类模型Recall对比.png",
+    "script": "分类模型.py",
+    "folder": "C:\\Users\\shenjie\\Desktop\\学校\\商务数据管理\\对应分类\\30_分类模型Recall对比",
+    "line": 344
+  },
+  {
+    "chart": "31_分类模型F1-score对比.png",
+    "script": "分类模型.py",
+    "folder": "C:\\Users\\shenjie\\Desktop\\学校\\商务数据管理\\对应分类\\31_分类模型F1-score对比",
+    "line": 357
+  },
+  {
+    "chart": "32_分类模型评价指标热力图.png",
+    "script": "分类模型.py",
+    "folder": "C:\\Users\\shenjie\\Desktop\\学校\\商务数据管理\\对应分类\\32_分类模型评价指标热力图",
+    "line": 374
+  },
+  {
+    "chart": "33_KNN分类_混淆矩阵.png",
+    "script": "分类模型.py",
+    "folder": "C:\\Users\\shenjie\\Desktop\\学校\\商务数据管理\\对应分类\\33_KNN分类_混淆矩阵",
+    "line": 388
+  },
+  {
+    "chart": "33_Logistic回归_混淆矩阵.png",
+    "script": "分类模型.py",
+    "folder": "C:\\Users\\shenjie\\Desktop\\学校\\商务数据管理\\对应分类\\33_Logistic回归_混淆矩阵",
+    "line": 388
+  },
+  {
+    "chart": "33_决策树分类_混淆矩阵.png",
+    "script": "分类模型.py",
+    "folder": "C:\\Users\\shenjie\\Desktop\\学校\\商务数据管理\\对应分类\\33_决策树分类_混淆矩阵",
+    "line": 388
+  },
+  {
+    "chart": "33_梯度提升分类_混淆矩阵.png",
+    "script": "分类模型.py",
+    "folder": "C:\\Users\\shenjie\\Desktop\\学校\\商务数据管理\\对应分类\\33_梯度提升分类_混淆矩阵",
+    "line": 388
+  },
+  {
+    "chart": "33_随机森林分类_混淆矩阵.png",
+    "script": "分类模型.py",
+    "folder": "C:\\Users\\shenjie\\Desktop\\学校\\商务数据管理\\对应分类\\33_随机森林分类_混淆矩阵",
+    "line": 388
+  },
+  {
+    "chart": "34_最佳分类模型混淆矩阵.png",
+    "script": "分类模型.py",
+    "folder": "C:\\Users\\shenjie\\Desktop\\学校\\商务数据管理\\对应分类\\34_最佳分类模型混淆矩阵",
+    "line": 402
+  },
+  {
+    "chart": "35_最佳分类模型真实预测类别分布对比.png",
+    "script": "分类模型.py",
+    "folder": "C:\\Users\\shenjie\\Desktop\\学校\\商务数据管理\\对应分类\\35_最佳分类模型真实预测类别分布对比",
+    "line": 435
+  },
+  {
+    "chart": "36_最佳分类模型预测正确错误占比.png",
+    "script": "分类模型.py",
+    "folder": "C:\\Users\\shenjie\\Desktop\\学校\\商务数据管理\\对应分类\\36_最佳分类模型预测正确错误占比",
+    "line": 453
+  },
+  {
+    "chart": "37_分类模型特征重要性Top20.png",
+    "script": "分类模型.py",
+    "folder": "C:\\Users\\shenjie\\Desktop\\学校\\商务数据管理\\对应分类\\37_分类模型特征重要性Top20",
+    "line": 490
+  }
+]

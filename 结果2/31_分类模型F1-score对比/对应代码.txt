@@ -1,0 +1,10 @@
+# =========================
+plt.figure(figsize=(12, 6))
+sns.barplot(data=result_df, x="模型", y="F1-score")
+plt.title("不同分类模型F1-score对比")
+plt.xlabel("分类模型")
+plt.ylabel("F1-score")
+plt.xticks(rotation=45, ha="right")
+plt.tight_layout()
+plt.savefig(os.path.join(output_dir, "31_分类模型F1-score对比.png"), dpi=300)
+plt.close()

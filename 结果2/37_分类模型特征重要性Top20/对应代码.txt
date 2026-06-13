@@ -1,0 +1,34 @@
+# =========================
+importance_model_name = None
+
+for candidate in ["随机森林分类", "梯度提升分类", "决策树分类"]:
+    if candidate in trained_pipelines:
+        importance_model_name = candidate
+        break
+
+if importance_model_name is not None:
+    importance_pipeline = trained_pipelines[importance_model_name]
+    clf_model = importance_pipeline.named_steps["model"]
+
+    try:
+        feature_names = importance_pipeline.named_steps["preprocessor"].get_feature_names_out()
+        feature_names = [name.replace("类别变量__", "").replace("数值变量__", "") for name in feature_names]
+
+        if hasattr(clf_model, "feature_importances_"):
+            importances = clf_model.feature_importances_
+
+            importance_df = pd.DataFrame({
+                "特征": feature_names,
+                "重要性": importances
+            }).sort_values(by="重要性", ascending=False).head(20)
+
+            importance_df.to_excel(os.path.join(model_dir, "分类模型特征重要性.xlsx"), index=False)
+
+            plt.figure(figsize=(10, 8))
+            sns.barplot(data=importance_df, x="重要性", y="特征")
+            plt.title(f"{importance_model_name}特征重要性Top20")
+            plt.xlabel("重要性")
+            plt.ylabel("特征")
+            plt.tight_layout()
+            plt.savefig(os.path.join(output_dir, "37_分类模型特征重要性Top20.png"), dpi=300)
+            plt.close()

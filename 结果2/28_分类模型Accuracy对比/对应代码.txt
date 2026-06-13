@@ -1,0 +1,10 @@
+# =========================
+plt.figure(figsize=(12, 6))
+sns.barplot(data=result_df, x="模型", y="Accuracy准确率")
+plt.title("不同分类模型Accuracy准确率对比")
+plt.xlabel("分类模型")
+plt.ylabel("Accuracy准确率")
+plt.xticks(rotation=45, ha="right")
+plt.tight_layout()
+plt.savefig(os.path.join(output_dir, "28_分类模型Accuracy对比.png"), dpi=300)
+plt.close()

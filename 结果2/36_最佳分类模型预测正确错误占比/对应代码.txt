@@ -1,0 +1,15 @@
+# =========================
+correct_count = best_pred_df["是否预测正确"].value_counts()
+correct_count.index = ["预测正确" if x else "预测错误" for x in correct_count.index]
+
+plt.figure(figsize=(8, 8))
+plt.pie(
+    correct_count,
+    labels=correct_count.index,
+    autopct="%1.1f%%",
+    startangle=90
+)
+plt.title(f"{best_model_name}预测正确与错误占比")
+plt.tight_layout()
+plt.savefig(os.path.join(output_dir, "36_最佳分类模型预测正确错误占比.png"), dpi=300)
+plt.close()

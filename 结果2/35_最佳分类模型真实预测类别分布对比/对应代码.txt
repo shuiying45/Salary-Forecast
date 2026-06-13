@@ -1,0 +1,30 @@
+# =========================
+compare_df = pd.DataFrame({
+    "真实类别": best_y_true.values,
+    "预测类别": best_y_pred
+})
+
+true_count = compare_df["真实类别"].value_counts().reindex(class_labels).fillna(0)
+pred_count = compare_df["预测类别"].value_counts().reindex(class_labels).fillna(0)
+
+count_compare_df = pd.DataFrame({
+    "薪资区间": class_labels,
+    "真实数量": true_count.values,
+    "预测数量": pred_count.values
+})
+
+count_compare_long = count_compare_df.melt(
+    id_vars="薪资区间",
+    value_vars=["真实数量", "预测数量"],
+    var_name="类别",
+    value_name="数量"
+)
+
+plt.figure(figsize=(10, 6))
+sns.barplot(data=count_compare_long, x="薪资区间", y="数量", hue="类别")
+plt.title(f"{best_model_name}真实类别与预测类别数量对比")
+plt.xlabel("薪资区间")
+plt.ylabel("数量")
+plt.tight_layout()
+plt.savefig(os.path.join(output_dir, "35_最佳分类模型真实预测类别分布对比.png"), dpi=300)
+plt.close()

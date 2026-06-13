@@ -1,0 +1,14 @@
+# =========================
+metric_df = result_df.set_index("模型")[[
+    "Accuracy准确率",
+    "Precision精确率",
+    "Recall召回率",
+    "F1-score"
+]]
+
+plt.figure(figsize=(10, 6))
+sns.heatmap(metric_df, annot=True, fmt=".4f", cmap="Blues")
+plt.title("分类模型评价指标热力图")
+plt.tight_layout()
+plt.savefig(os.path.join(output_dir, "32_分类模型评价指标热力图.png"), dpi=300)
+plt.close()

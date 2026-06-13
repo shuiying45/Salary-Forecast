@@ -1,0 +1,11 @@
+# =========================
+for name, cm_df in confusion_matrices.items():
+    plt.figure(figsize=(8, 6))
+    sns.heatmap(cm_df, annot=True, fmt="d", cmap="Blues")
+    plt.title(f"{name}混淆矩阵")
+    plt.xlabel("预测类别")
+    plt.ylabel("真实类别")
+    plt.tight_layout()
+    safe_name = name.replace("/", "_").replace("\\", "_")
+    plt.savefig(os.path.join(output_dir, f"33_{safe_name}_混淆矩阵.png"), dpi=300)
+    plt.close()
