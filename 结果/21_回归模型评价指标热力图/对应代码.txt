@@ -1,0 +1,13 @@
+# =========================
+metric_df = result_df.set_index("模型")[[
+    "MAE平均绝对误差",
+    "RMSE均方根误差",
+    "R2拟合优度"
+]]
+
+plt.figure(figsize=(10, 6))
+sns.heatmap(metric_df, annot=True, fmt=".4f", cmap="Blues")
+plt.title("回归模型评价指标热力图")
+plt.tight_layout()
+plt.savefig(os.path.join(output_dir, "21_回归模型评价指标热力图.png"), dpi=300)
+plt.close()

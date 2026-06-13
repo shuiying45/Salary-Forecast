@@ -1,0 +1,14 @@
+# =========================
+salary_level_count = df["薪资区间"].value_counts()
+
+plt.figure(figsize=(8, 8))
+plt.pie(
+    salary_level_count,
+    labels=salary_level_count.index,
+    autopct="%1.1f%%",
+    startangle=90
+)
+plt.title("薪资区间占比")
+plt.tight_layout()
+plt.savefig(os.path.join(output_dir, "14_薪资区间占比饼图.png"), dpi=300)
+plt.close()

@@ -1,0 +1,11 @@
+# =========================
+skill_salary = df.groupby("技能等级")["薪资"].mean().sort_values(ascending=False)
+
+plt.figure(figsize=(8, 6))
+sns.barplot(x=skill_salary.index, y=skill_salary.values)
+plt.title("不同技能等级平均薪资对比")
+plt.xlabel("技能等级")
+plt.ylabel("平均薪资")
+plt.tight_layout()
+plt.savefig(os.path.join(output_dir, "17_不同技能等级平均薪资对比.png"), dpi=300)
+plt.close()

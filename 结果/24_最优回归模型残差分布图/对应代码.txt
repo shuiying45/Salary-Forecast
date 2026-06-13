@@ -1,0 +1,9 @@
+# =========================
+plt.figure(figsize=(10, 6))
+sns.histplot(best_pred_df["预测误差"], bins=50, kde=True)
+plt.title(f"{best_model_name}残差分布图")
+plt.xlabel("残差：真实值-预测值")
+plt.ylabel("频数")
+plt.tight_layout()
+plt.savefig(os.path.join(output_dir, "24_最优回归模型残差分布图.png"), dpi=300)
+plt.close()

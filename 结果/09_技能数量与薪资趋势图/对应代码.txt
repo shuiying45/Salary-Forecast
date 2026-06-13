@@ -1,0 +1,9 @@
+# =========================
+plt.figure(figsize=(10, 6))
+sns.regplot(data=plot_df, x="技能数量", y="薪资", scatter_kws={"alpha": 0.25}, line_kws={"linewidth": 2})
+plt.title("技能数量与薪资回归趋势图")
+plt.xlabel("技能数量")
+plt.ylabel("薪资")
+plt.tight_layout()
+plt.savefig(os.path.join(output_dir, "09_技能数量与薪资趋势图.png"), dpi=300)
+plt.close()

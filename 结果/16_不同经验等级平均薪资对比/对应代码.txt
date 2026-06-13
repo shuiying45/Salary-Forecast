@@ -1,0 +1,11 @@
+# =========================
+exp_salary = df.groupby("经验等级")["薪资"].mean().sort_values(ascending=False)
+
+plt.figure(figsize=(8, 6))
+sns.barplot(x=exp_salary.index, y=exp_salary.values)
+plt.title("不同经验等级平均薪资对比")
+plt.xlabel("经验等级")
+plt.ylabel("平均薪资")
+plt.tight_layout()
+plt.savefig(os.path.join(output_dir, "16_不同经验等级平均薪资对比.png"), dpi=300)
+plt.close()

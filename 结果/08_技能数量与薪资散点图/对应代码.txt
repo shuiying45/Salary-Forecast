@@ -1,0 +1,9 @@
+# =========================
+plt.figure(figsize=(10, 6))
+sns.scatterplot(data=plot_df, x="技能数量", y="薪资", alpha=0.35)
+plt.title("技能数量与薪资关系散点图")
+plt.xlabel("技能数量")
+plt.ylabel("薪资")
+plt.tight_layout()
+plt.savefig(os.path.join(output_dir, "08_技能数量与薪资散点图.png"), dpi=300)
+plt.close()

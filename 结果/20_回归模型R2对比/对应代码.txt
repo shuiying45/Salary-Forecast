@@ -1,0 +1,10 @@
+# =========================
+plt.figure(figsize=(12, 6))
+sns.barplot(data=result_df, x="模型", y="R2拟合优度")
+plt.title("不同回归模型R2对比")
+plt.xlabel("回归模型")
+plt.ylabel("R2拟合优度")
+plt.xticks(rotation=45, ha="right")
+plt.tight_layout()
+plt.savefig(os.path.join(output_dir, "20_回归模型R2对比.png"), dpi=300)
+plt.close()

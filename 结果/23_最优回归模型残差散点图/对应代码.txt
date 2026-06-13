@@ -1,0 +1,10 @@
+# =========================
+plt.figure(figsize=(10, 6))
+sns.scatterplot(data=plot_best, x="预测薪资", y="预测误差", alpha=0.45)
+plt.axhline(y=0, linestyle="--")
+plt.title(f"{best_model_name}残差散点图")
+plt.xlabel("预测薪资")
+plt.ylabel("残差：真实值-预测值")
+plt.tight_layout()
+plt.savefig(os.path.join(output_dir, "23_最优回归模型残差散点图.png"), dpi=300)
+plt.close()

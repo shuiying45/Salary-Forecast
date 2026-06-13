@@ -1,0 +1,12 @@
+# =========================
+job_salary = df.groupby("岗位名称")["薪资"].mean().sort_values(ascending=False)
+
+plt.figure(figsize=(12, 6))
+sns.barplot(x=job_salary.index, y=job_salary.values)
+plt.title("不同岗位平均薪资对比")
+plt.xlabel("岗位名称")
+plt.ylabel("平均薪资")
+plt.xticks(rotation=45, ha="right")
+plt.tight_layout()
+plt.savefig(os.path.join(output_dir, "03_不同岗位平均薪资对比.png"), dpi=300)
+plt.close()

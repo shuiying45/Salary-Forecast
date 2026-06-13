@@ -1,0 +1,9 @@
+# =========================
+plt.figure(figsize=(10, 6))
+sns.histplot(df["薪资"], bins=50, kde=True)
+plt.title("技术岗位薪资分布直方图")
+plt.xlabel("薪资")
+plt.ylabel("岗位数量")
+plt.tight_layout()
+plt.savefig(os.path.join(output_dir, "01_薪资分布直方图.png"), dpi=300)
+plt.close()

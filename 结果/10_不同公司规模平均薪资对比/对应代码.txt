@@ -1,0 +1,12 @@
+# =========================
+company_salary = df.groupby("公司规模")["薪资"].mean().sort_values(ascending=False)
+
+plt.figure(figsize=(10, 6))
+sns.barplot(x=company_salary.index, y=company_salary.values)
+plt.title("不同公司规模平均薪资对比")
+plt.xlabel("公司规模")
+plt.ylabel("平均薪资")
+plt.xticks(rotation=30, ha="right")
+plt.tight_layout()
+plt.savefig(os.path.join(output_dir, "10_不同公司规模平均薪资对比.png"), dpi=300)
+plt.close()

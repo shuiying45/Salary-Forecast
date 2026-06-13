@@ -1,0 +1,11 @@
+# =========================
+remote_salary = df.groupby("远程办公方式")["薪资"].mean().sort_values(ascending=False)
+
+plt.figure(figsize=(8, 6))
+sns.barplot(x=remote_salary.index, y=remote_salary.values)
+plt.title("不同远程办公方式平均薪资对比")
+plt.xlabel("远程办公方式")
+plt.ylabel("平均薪资")
+plt.tight_layout()
+plt.savefig(os.path.join(output_dir, "13_远程办公方式与平均薪资.png"), dpi=300)
+plt.close()

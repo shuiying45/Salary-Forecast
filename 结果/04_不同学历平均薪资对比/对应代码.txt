@@ -1,0 +1,11 @@
+# =========================
+edu_salary = df.groupby("学历水平")["薪资"].mean().sort_values(ascending=False)
+
+plt.figure(figsize=(10, 6))
+sns.barplot(x=edu_salary.index, y=edu_salary.values)
+plt.title("不同学历水平平均薪资对比")
+plt.xlabel("学历水平")
+plt.ylabel("平均薪资")
+plt.tight_layout()
+plt.savefig(os.path.join(output_dir, "04_不同学历平均薪资对比.png"), dpi=300)
+plt.close()
